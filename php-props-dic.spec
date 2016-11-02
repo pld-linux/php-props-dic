@@ -3,13 +3,14 @@
 Summary:	An IDE and static analysis friendly PHP DI container
 Name:		php-%{pkgname}
 Version:	2.2.0
-Release:	1
+Release:	2
 License:	MIT
 Group:		Development/Languages/PHP
 Source0:	https://github.com/mrclay/Props/archive/%{version}/%{name}-%{version}.tar.gz
 # Source0-md5:	b33eb3f60a41a7caa5ea0794a357ab92
 URL:		https://packagist.org/packages/mrclay/props-dic
 Requires:	php(core) >= %{php_min_version}
+Requires:	php-container-interop >= 1.1
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
